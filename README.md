@@ -1,7 +1,5 @@
 # HR-Analytic-Portofolio
-Data Cleaning, SQL Analysis, Excel Dashboard, and Power BI Dashboard
-
-## Project Overview
+## Overview
 This project analyzes a synthetic HR dataset to understand workforce characteristics, employee performance, attendance, compensation, and attrition. The analysis was conducted using Python, SQL, Excel, and Power BI to generate business insights and interactive dashboards.
 
 ## Business Problem
@@ -29,6 +27,11 @@ The HR department requires insights into workforce characteristics, employee per
 - Excel
 - Power BI
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue)
+![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
 ## Project Workflow
 1. Dataset
 2. Data Cleaning
@@ -37,7 +40,7 @@ The HR department requires insights into workforce characteristics, employee per
 5. Dashboard
 6. Business Insights
 7. Business Recommendations
-   
+
 ## Data Cleaning
 - Removed duplicate records
 - Converted date columns to datetime
@@ -75,16 +78,7 @@ The exploratory analysis covers:
 - Business Insight Generation
 
 ## Dashboard Preview
-![Power BI Dashboard](Images/powerbi_dashboard.png)
-
-## Pivot Preview
-![Power BI Dashboard](Images/pivot_analysis.png)
-
-## Department Insight Preview
-![Power BI Dashboard](Images/department_insight.png)
-
-## Employee Insight Preview
-![Power BI Dashboard](Images/employee_insight.png)
+![Power BI Dashboard ](Images/powerbi_dashboard.png)
 
 ## Key Insights
 - Operations has the largest workforce.
@@ -99,42 +93,27 @@ The exploratory analysis covers:
 - Monitor employee satisfaction regularly to identify improvement opportunities.
 - Consider further predictive analysis to identify factors influencing employee attrition.
 
-## Repository Structure
-```text
-HR-Analytics-Portfolio/
+```
+HR-Analytics-Portfolio
 │
-├── Data/
+├── Data
 │   ├── hr_data_raw.csv
-│   └── hr_data_cleaned.csv
-│
-├── Excel/
-│   └── Data HR Employee.xlsx
-│
-├── SQL/
-│   ├── 01_data_cleaning.sql
-│   ├── 02_eda.sql
-│   └── 03_business_insights.sql
-│
-├── Power BI/
-│   └── HR_Analytics_Dashboard.pbix
+│   └── hr_data_cleaning.csv
 │
 ├── Python
 │   ├── Data Understanding.py
 │   ├── Data Cleaning.py
 │   └── EDA.py
 │
-├── Images/
-│   ├── before_cleaning.png
-│   ├── after_cleaning.png
-│   ├── pivot_analysis.png
-│   └── powerbi_dashboard.png
+├── SQL
+│
+├── Excel
+│
+├── Power BI
+│
+├── Images
 │
 ├── Report.md
 │
 └── README.md
 ```
-
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-17-blue)
-![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen)

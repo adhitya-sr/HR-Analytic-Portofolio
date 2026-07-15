@@ -50,9 +50,35 @@ df_clean['Region'] = df_clean['Region'].replace('Jakrta','Jakarta')
 # CONVERT DATA TYPES
 # =================================
 print('\n===== DATE TYPE =====')
-df_clean['Resignation Date'] = pd.to_datetime(df_clean['Resignation Date'])
-df_clean['Hire Date'] = pd.to_datetime(df_clean['Hire Date'])
+df_clean['Hire Date'] = pd.to_datetime(
+    df_clean['Hire Date'],
+    dayfirst=True,
+    errors='coerce'
+)
 
+df_clean['Resignation Date'] = pd.to_datetime(
+    df_clean['Resignation Date'],
+    dayfirst=True,
+    errors='coerce'
+)
+
+analysis_date = pd.Timestamp('2026-07-14')
+
+df_clean.loc[
+    df_clean['Resignation Date'] > analysis_date,
+    'Resignation Date'
+] = analysis_date
+
+def years_at_company(row):
+    if pd.isna(row['Resignation Date']):
+        days = (analysis_date - row['Hire Date']).days
+    else:
+        days = (row['Resignation Date'] - row['Hire Date']).days
+    return (days / 365.25)
+
+df_clean['Years at Company'] = df_clean.apply(years_at_company,axis=1)
+
+print(df_clean[['Hire Date','Resignation Date','Years at Company']])
 # =================================
 # DATA VALIDATION
 # =================================

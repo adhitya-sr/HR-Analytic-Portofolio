@@ -308,7 +308,7 @@ plt.tight_layout()
 plt.show()
 
 # =================================
-# ATTRICTION ANALYSIS
+# ATTRITION ANALYSIS
 # =================================
 print('===== Attrition Count =====')
 def attrition_calculate(df):
@@ -372,14 +372,12 @@ print('===== Attrition Rate by Tenure =====')
 def kategori(tenure):
       if tenure < 1:
             return '<1'
-      elif 1<= tenure <3:
+      elif tenure <3:
             return '1-3'
-      elif 3<= tenure <5:
+      elif tenure <5:
             return '3-5'
-      elif 5<= tenure <10:
-            return '5-10'
       else:
-            return ">10"
+            return '>5'
 df['Tenure Category'] = (df['Years at Company']
                         .apply(kategori))
 tenure_attrition = pd.pivot_table(data=df,
@@ -399,12 +397,12 @@ print('===== Attrition Rate by Age =====')
 def kategori(age):
       if age <30:
             return '21-29'
-      elif 30<= age <40:
+      elif age <40:
             return '30-39'
-      elif 40<= age <50:
+      elif age <50:
             return '40-49'
       else:
-            return "50<"
+            return "+50"
 df['Age Category'] = df['Age'].apply(kategori)
 age_attrition = pd.pivot_table(data=df,
                                values='Employee ID',
