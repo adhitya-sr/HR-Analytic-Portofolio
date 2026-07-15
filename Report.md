@@ -125,12 +125,12 @@
     - Atrisi karyawan secara keseluruhan adalah 17,86%
     - Departemen dengan atrisi tertinggi adalah Finance, di angka 18,93%
     - Laki-laki memiliki atrisi lebih tinggi dibandingkan perempuan
-    - Karyawan dengan tenure 1-3 tahun memiliki tingkat atrisi yang tertinggi
+    - Karyawan dengan tenure kurang dari 1 tahun memiliki tingkat atrisi yang tertinggi
     - Karyawan dengan kisaran umur dibawah 30 tahun memiliki atrisi paling tinggi dengan 18,99%
 
 ## Business Insight
     - Finance memiliki tingkat attrition tertinggi dibandingkan departemen lain. Kondisi ini menunjukkan bahwa departemen tersebut dapat menjadi prioritas untuk evaluasi lebih lanjut terkait faktor-faktor yang memengaruhi attrition
-    - Secara tenure dan umur, atrisi relatif tinggi terjadi pada karyawan yang bekerja antara 1-3 tahun dan usia dibawah 30 tahun, hal ini menunjukkan bahwa perusahaan perlu melakukan konsultasi kepada kelompok dengan atrisi yang relatif tinggi
+    - Secara tenure dan umur, atrisi relatif tinggi terjadi pada karyawan yang bekerja kurang dari 1 tahun dan usia dibawah 30 tahun, hal ini menunjukkan bahwa perusahaan perlu melakukan konsultasi kepada kelompok dengan atrisi yang relatif tinggi
 
 # CORRELATION ANALYSIS
 ## Business Question
