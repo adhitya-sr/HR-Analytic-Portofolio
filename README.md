@@ -84,11 +84,11 @@ The exploratory analysis covers:
 - Operations has the largest workforce.
 - Finance has the highest average monthly salary.
 - Employee attrition rate is 17.86%.
-- Employees with 1-3 years of tenure show the highest attrition rate.
+- Employees with less than 1 year of tenure show the highest attrition rate.
 - Most numerical variables exhibit very weak linear correlations.
 
 ## Business Recommendations
-- Review retention strategies for employees with 1-3 years of tenure.
+- Review retention strategies for employees with less than 1 year of tenure.
 - Investigate factors contributing to higher attrition in the Finance department.
 - Monitor employee satisfaction regularly to identify improvement opportunities.
 - Consider further predictive analysis to identify factors influencing employee attrition.
